@@ -1,6 +1,6 @@
-Hello World!
-I am currently being built!
+#Hello World!
+#I am currently being built!
 
-Find me at:\n
-email: santiguillen97@gmail.com\n
-Instagram, Twitter: @santiguillengar
+#Find me at:
+#email: santiguillen97@gmail.com
+#Instagram, Twitter: @santiguillengar
