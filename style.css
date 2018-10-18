@@ -21,6 +21,13 @@
 .topnav .active {
     font-weight: bold;
 }
+
+
+.hr2 {
+  width: 25%;
+  margin-left: 0px;
+}
+
 body {
 	width: 100%;
   margin: 30px auto;
