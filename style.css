@@ -26,6 +26,13 @@
   width: 25%;
   margin-left: 0px;
 }
+.hr3 {
+  width: 25%;
+}
+
+h5:hover {
+  color: #3aad58;
+}
 
 .subheader1 {
   color: #73d58c;
