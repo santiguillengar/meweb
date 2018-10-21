@@ -22,13 +22,15 @@
   font-weight: bold;
 }
 
+
 .hr2 {
   width: 25%;
   margin-left: 0px;
 }
+
 .hr3 {
   width: 35%;
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
 h5:hover {
@@ -71,7 +73,7 @@ dt {
   font-weight: normal;
 }
 
-dD {
+dd {
   color: #90a4ae;
 }
 
@@ -79,17 +81,9 @@ dD {
   color: #90a4ae;
 }
 
-body, html {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding: 0 30px;
-}
-
 .bg {
   background-image: url("assets/santi_suit_caltonhill.jpg");
   height: 50%;
-
   background-position: center;
   background-repeat: no-no-repeat;
   background-size: cover;
@@ -109,5 +103,71 @@ body, html {
 }
 
 .subheaderColorSection {
+  color: white;
+}
+
+html,
+body,
+.view {
+  height: 100%;
+}
+
+.exp-main-body {
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+    padding-left: 30px;
+}
+
+
+
+@media (max-width: 740px) {
+  body, html,header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 30px;
+  }
+}
+
+/*@media (max-width: 740px) {
+  body, html,header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0 30px;
+  }
+}*/
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #78909c !important;
+  }
+}
+
+.h1-home {
+  letter-spacing: 8px;
+  color: white;
+}
+
+.h5-home {
+  letter-spacing: 3px;
+  color: white;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.button-home {
+  border: 3px solid #fff;
   color: white;
 }
