@@ -27,7 +27,8 @@
   margin-left: 0px;
 }
 .hr3 {
-  width: 25%;
+  width: 35%;
+    margin-left: 0px;
 }
 
 h5:hover {
@@ -36,6 +37,18 @@ h5:hover {
 
 .subheader1 {
   color: #73d58c;
+}
+
+.subheader1:hover {
+  color: #3aad58;
+}
+
+.subheader1-link {
+  color: #73d58c;
+}
+
+.subheader1-link:hover {
+  color: #006dcc;
 }
 
 .primaryCard {
@@ -54,8 +67,12 @@ h5:hover {
   font-weight: bold;
 }
 
-.subheader1:hover {
-  color: #3aad58;
+dt {
+  font-weight: normal;
+}
+
+dD {
+  color: #90a4ae;
 }
 
 .moreinfo {
@@ -64,7 +81,23 @@ h5:hover {
 
 body {
   width: 100%;
-  margin: 30px auto;
   position: relative;
   padding: 0 30px;
+}
+
+.main_body {
+  margin-left: 30px auto;
+  margin-right: 30px auto;
+}
+
+.colorSection {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #73d58c;
+}
+
+.subheaderColorSection {
+  color: white;
 }
