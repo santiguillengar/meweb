@@ -148,9 +148,9 @@ body,
 }
 
 @media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
+  /*.navbar:not(.top-nav-collapse) {
     background: #78909c !important;
-  }
+  }*/
 }
 
 .h1-home {
@@ -175,4 +175,9 @@ body,
 .button-home :hover{
   border: 3px solid #fff;
   color: #73d58c;
+}
+
+.background-image {
+    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+    filter: blur(1px);
 }
