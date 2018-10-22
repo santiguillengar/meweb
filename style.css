@@ -121,6 +121,7 @@ body,
 
 
 
+
 @media (max-width: 740px) {
   body, html,header {
     width: 100%;
@@ -170,4 +171,8 @@ body,
 .button-home {
   border: 3px solid #fff;
   color: white;
+}
+.button-home :hover{
+  border: 3px solid #fff;
+  color: #73d58c;
 }
