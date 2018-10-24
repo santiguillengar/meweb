@@ -176,8 +176,3 @@ body,
   border: 3px solid #fff;
   color: #73d58c;
 }
-
-.background-image {
-    -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-    filter: blur(1px);
-}
