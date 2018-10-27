@@ -22,7 +22,6 @@
   font-weight: bold;
 }
 
-
 .hr2 {
   width: 25%;
   margin-left: 0px;
@@ -119,9 +118,6 @@ body,
   padding-right: 30px;
 }
 
-
-
-
 @media (max-width: 740px) {
   body, html, header {
     width: 100%;
@@ -138,9 +134,6 @@ body,
 .navbar:not(.top-nav-collapse) {
   background: transparent !important;
 }
-
-
-
 
 .h1-home {
   letter-spacing: 8px;
@@ -161,52 +154,51 @@ body,
   border: 3px solid #fff;
   color: white;
 }
-.button-home :hover{
+
+.button-home :hover {
   border: 3px solid #fff;
   color: #73d58c;
 }
 
-
-
-.post-preview > a {
+.post-preview>a {
   color: #212529;
 }
 
-.post-preview > a:focus, .post-preview > a:hover {
+.post-preview>a:focus, .post-preview>a:hover {
   text-decoration: none;
   color: #3aad58;
 }
 
-.post-preview > a > .post-title {
+.post-preview>a>.post-title {
   font-size: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
 
-.post-preview > a > .post-subtitle {
+.post-preview>a>.post-subtitle {
   font-weight: 300;
   margin: 0 0 10px;
 }
 
-.post-preview > .post-meta {
+.post-preview>.post-meta {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
   color: #868e96;
 }
 
-.post-preview > .post-meta > a {
+.post-preview>.post-meta>a {
   text-decoration: none;
   color: #212529;
 }
 
-.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+.post-preview>.post-meta>a:focus, .post-preview>.post-meta>a:hover {
   text-decoration: underline;
   color: #3aad58;
 }
 
 @media only screen and (min-width: 768px) {
-  .post-preview > a > .post-title {
+  .post-preview>a>.post-title {
     font-size: 36px;
   }
 }
