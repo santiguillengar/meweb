@@ -1,0 +1,208 @@
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.topnav :hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav.active {
+  font-weight: bold;
+}
+
+.hr2 {
+  width: 25%;
+  margin-left: 0px;
+}
+
+.hr3 {
+  width: 35%;
+  margin-left: 0px;
+}
+
+h5:hover {
+  color: #3aad58;
+}
+
+.subheader1 {
+  color: #73d58c;
+}
+
+.subheader1:hover {
+  color: #3aad58;
+}
+
+.subheader1-link {
+  color: #73d58c;
+}
+
+.subheader1-link:hover {
+  color: #006dcc;
+}
+
+.primaryCard {
+  background-color: #73d58c;
+  border-color: #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.primaryCard :hover {
+  background-color: #3aad58;
+  border-color: #FFFFFF;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+dt {
+  font-weight: normal;
+}
+
+dd {
+  color: #90a4ae;
+}
+
+.moreinfo {
+  color: #90a4ae;
+}
+
+.bg {
+  background-image: url("assets/santi_suit_caltonhill.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-no-repeat;
+  background-size: cover;
+}
+
+.main_body {
+  margin-left: 30px auto;
+  margin-right: 30px auto;
+}
+
+.colorSection {
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #73d58c;
+}
+
+.subheaderColorSection {
+  color: white;
+}
+
+html,
+body,
+.view {
+  height: 100%;
+}
+
+.exp-main-body {
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (max-width: 740px) {
+  body, html, header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+.h1-home {
+  letter-spacing: 8px;
+  color: white;
+}
+
+.h5-home {
+  letter-spacing: 3px;
+  color: white;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.button-home {
+  border: 3px solid #fff;
+  color: white;
+}
+
+.button-home :hover {
+  border: 3px solid #fff;
+  color: #73d58c;
+}
+
+.post-preview>a {
+  color: #212529;
+}
+
+.post-preview>a:focus, .post-preview>a:hover {
+  text-decoration: none;
+  color: #3aad58;
+}
+
+.post-preview>a>.post-title {
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.post-preview>a>.post-subtitle {
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+
+.post-preview>.post-meta {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: #868e96;
+}
+
+.post-preview>.post-meta>a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.post-preview>.post-meta>a:focus, .post-preview>.post-meta>a:hover {
+  text-decoration: underline;
+  color: #3aad58;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-preview>a>.post-title {
+    font-size: 36px;
+  }
+}
+
+.with-margin {
+  margin-bottom: 10px;
+}

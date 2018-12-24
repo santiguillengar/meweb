@@ -15,8 +15,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script language="javascript" type="text/javascript" src="wow.js"></script>
   <script language="javascript" type="text/javascript" src="javascript.js"></script>
@@ -29,6 +28,7 @@
 </head>
 
 <body>
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-md navbar-light exp-navbar">
     <div class="container-fluid">
       <ul class="navbar-nav">
@@ -38,22 +38,20 @@
         <li class="nav-item topnav">
           <a class="nav-link" href="portfolio.html">Experience</a>
         </li>
+        <li class="nav-item topnav">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li>
       </ul>
     </div>
   </nav>
 
-
-
   <!-- Full Page Intro -->
-  <div class="view" style="background-image: url('assets/santi_suit_caltonhill.jpg');
-background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <!-- Content -->
+  <header class="view" style="background-image: url('assets/santi_suit_caltonhill.jpg');
+background-size: cover; background-position: center center;/* opacity:0.8;*/">
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center" style="opacity:1;">
+    <div class="overlay" style="opacity:0.5;"></div>
       <div class="container">
-        <!--Grid row-->
         <div class="row">
-          <!--Grid column-->
           <div class="col-md-12 mb-4 text-center">
             <h1 class="h1-reponsive h1-home text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s">
               <strong>Santi Guillen</strong>
@@ -65,15 +63,11 @@ background-repeat: no-repeat; background-size: cover; background-position: cente
             <a class="btn button-home wow fadeInDown" href="#text" data-wow-delay="0.4s">About me</a>
             <a class="btn button-home wow fadeInDown" href="portfolio.html" data-wow-delay="0.4s">Experience</a>
           </div>
-          <!--Grid column-->
         </div>
-        <!--Grid row-->
       </div>
-      <!-- Content -->
     </div>
-    <!-- Mask & flexbox options-->
-  </div>
-  <!-- Full Page Intro -->
+  </header>
+   <!-- Full Page Intro -->
 
 
   <!-- ========== END OF COMMON ELEMENTS FOR TOP ========== -->
@@ -151,7 +145,6 @@ background-repeat: no-repeat; background-size: cover; background-position: cente
       <h1>Find me online:</h1>
     </div>
 
-    <br>
     <br>
     <div class="row">
       <div class="col-0 col-xs-2 col-sm-2 col-md-2"></div>
