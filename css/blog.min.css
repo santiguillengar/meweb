@@ -56,15 +56,13 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #3aad58
-  text-shadow: none
+  background-color: #3aad58
 }
-
+/*
 ::selection {
   color: #fff;
-  background: #3aad58
-  text-shadow: none
-}
+  background-color: #3aad58
+}*/
 
 img::-moz-selection {
   color: #fff;
