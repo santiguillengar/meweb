@@ -206,3 +206,13 @@ body,
 .with-margin {
   margin-bottom: 10px;
 }
+
+
+/*a:focus, a:hover {
+  color: #3aad58
+}*/
+a {
+  color: #212529;
+  -webkit-transition: all .2s;
+  transition: all .2s
+}
