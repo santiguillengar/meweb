@@ -136,7 +136,7 @@ body,
 }
 
 .h1-home {
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   color: white;
 }
 
@@ -216,3 +216,41 @@ a {
   -webkit-transition: all .2s;
   transition: all .2s
 }
+
+
+/*Typed text css section */
+@media (min-width: 450px) { /*only type text on larger screens so it fits*/
+
+  .typed-text-wrapper {
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typed-text {
+    width: 14ch;
+    /* width: 70vmin; */
+    animation: typing 2s steps(14), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* font-family: monospace;
+    font-size: 2em; */
+    color: white;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+}
+/*End of typed text css section*/
