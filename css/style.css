@@ -238,6 +238,8 @@ a {
     /* font-family: monospace;
     font-size: 2em; */
     color: white;
+    -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+    animation-delay: 0.5s;
   }
 
   @keyframes typing {
