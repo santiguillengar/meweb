@@ -218,6 +218,15 @@ a {
 }
 
 
+@media (min-width: 450px) {
+  #intro-paragraph {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+
+
 /*Typed text css section */
 @media (min-width: 450px) { /*only type text on larger screens so it fits*/
 
