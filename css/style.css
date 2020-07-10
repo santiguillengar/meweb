@@ -155,9 +155,10 @@ body,
   color: white;
 }
 
-.button-home :hover {
-  border: 3px solid #fff;
-  color: #73d58c;
+.button-home:hover {
+  background-color: #fff;
+  /* color: #73d58c; */
+  color: black;
 }
 
 .post-preview>a {
