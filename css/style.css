@@ -1,6 +1,25 @@
+/* ----------------------------- COLOR VARIABLESBELOW ----------------------------- */
+:root {
+
+  --nav-btn-hover-bg: #DDDDDD;
+  --nav-btn-hover-color: #000000;
+
+  --main-accent-color: #73d58c;
+  --main-accent-hover-color:#3aad58;;
+  --main-dark-color: #222831;
+  --main-text-color: #ececec;
+
+  --exp-bg-color: #FFFFFF;
+  --exp-link-color: #006dcc;
+  --exp-details-color: #90a4ae;;
+
+}
+
+/* ----------------------------- GENERAL CSS BELOW ----------------------------- */
+
 /* Add a white background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: var(--exp-bg-color);
   overflow: hidden;
 }
 
@@ -14,8 +33,8 @@
 
 /* Change the color of links on hover */
 .topnav :hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--nav-btn-hover-bg);
+  color: var(--nav-btn-hover-color);
 }
 
 /* Add a color to the active/current link */
@@ -23,100 +42,20 @@
   font-weight: bold;
 }
 
-.hr2 {
-  width: 25%;
-  margin-left: 0px;
-}
-
-.hr3 {
-  width: 35%;
-  margin-left: 0px;
-}
-
 h5:hover {
-  color: #3aad58;
+  color: var(--main-accent-hover-color);
 }
 
-.subheader1 {
-  color: #73d58c;
-}
-
-.subheader1:hover {
-  color: #3aad58;
-}
-
-.subheader1-link {
-  color: #73d58c;
-}
-
-.subheader1-link:hover {
-  color: #006dcc;
-}
-
-.primaryCard {
-  background-color: #73d58c;
-  border-color: #FFFFFF;
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-.primaryCard :hover {
-  background-color: #3aad58;
-  border-color: #FFFFFF;
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: bold;
-}
-
-dt {
-  font-weight: normal;
-}
-
-dd {
-  color: #90a4ae;
-}
 
 .moreinfo {
-  color: #90a4ae;
+  color: var(--exp-details-color);
 }
 
-.bg {
-  background-image: url("assets/santi_suit_caltonhill.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-no-repeat;
-  background-size: cover;
-}
-
-.main_body {
-  margin-left: 30px auto;
-  margin-right: 30px auto;
-}
-
-.colorSection {
-  margin-left: -30px !important;
-  margin-right: -30px !important;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #73d58c;
-}
-
-.subheaderColorSection {
-  color: white;
-}
 
 html,
 body,
 .view {
   height: 100%;
-}
-
-.exp-main-body {
-  width: 100%;
-  position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 @media (max-width: 740px) {
@@ -128,13 +67,26 @@ body,
   }
 }
 
-.top-nav-collapse {
-  background-color: #78909c !important;
+
+a {
+  color: #212529;
+  -webkit-transition: all .2s;
+  transition: all .2s
 }
 
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+
+@media (min-width: 450px) {
+  #intro-paragraph {
+    width: 60%;
+    margin: auto;
+  }
+
+  .moreinfo {
+    width: 80%;
+  }
 }
+
+/* ----------------------------- HOME PAGE CSS BELOW ----------------------------- */
 
 .h1-home {
   letter-spacing: 4px;
@@ -161,77 +113,6 @@ body,
   /* color: #73d58c; */
   color: black;
 }
-
-.post-preview>a {
-  color: #212529;
-}
-
-.post-preview>a:focus, .post-preview>a:hover {
-  text-decoration: none;
-  color: #3aad58;
-}
-
-.post-preview>a>.post-title {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.post-preview>a>.post-subtitle {
-  font-weight: 300;
-  margin: 0 0 10px;
-}
-
-.post-preview>.post-meta {
-  font-size: 18px;
-  font-style: italic;
-  margin-top: 0;
-  color: #868e96;
-}
-
-.post-preview>.post-meta>a {
-  text-decoration: none;
-  color: #212529;
-}
-
-.post-preview>.post-meta>a:focus, .post-preview>.post-meta>a:hover {
-  text-decoration: underline;
-  color: #3aad58;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview>a>.post-title {
-    font-size: 36px;
-  }
-}
-
-.with-margin {
-  margin-bottom: 10px;
-}
-
-
-/*a:focus, a:hover {
-  color: #3aad58
-}*/
-a {
-  color: #212529;
-  -webkit-transition: all .2s;
-  transition: all .2s
-}
-
-
-@media (min-width: 450px) {
-  #intro-paragraph {
-    width: 60%;
-    margin: auto;
-  }
-
-  .moreinfo {
-    width: 80%;
-  }
-}
-
-
 
 /*Typed text css section */
 @media (min-width: 450px) { /*only type text on larger screens so it fits*/
@@ -271,3 +152,48 @@ a {
 
 }
 /*End of typed text css section*/
+
+
+
+/* ----------------------------- EXPERIENCE PAGE CSS BELOW ----------------------------- */
+
+.exp-main-body {
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hr2 {
+  width: 25%;
+  margin-left: 0px;
+}
+
+.hr3 {
+  width: 35%;
+  margin-left: 0px;
+}
+
+.subheader1 {
+  color: var(--main-accent-color);
+}
+
+.subheader1:hover {
+  color: var(--main-accent-hover-color);
+}
+
+.subheader1-link {
+  color: var(--main-accent-color);
+}
+
+.subheader1-link:hover {
+  color: var(--exp-link-color);
+}
+
+dt {
+  font-weight: normal;
+}
+
+dd {
+  color: var(--exp-details-color);
+}
