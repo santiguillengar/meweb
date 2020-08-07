@@ -158,7 +158,7 @@ a {
   border-radius: 4pt;
 
   padding: 20pt 40pt 20pt 40pt;
-  margin: 20pt;
+  margin: 20pt 0pt 20pt 0pt;
 }
 
 #contact-form:hover {
@@ -197,7 +197,7 @@ a {
 
 /* ----------------------------- EXPERIENCE PAGE CSS BELOW ----------------------------- */
 
-.exp-main-body {
+.main-body {
   width: 100%;
   position: relative;
   padding-left: 30px;
