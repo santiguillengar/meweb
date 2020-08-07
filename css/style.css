@@ -153,6 +153,46 @@ a {
 }
 /*End of typed text css section*/
 
+#contact-form {
+  border: var(--main-accent-color) solid 3px;
+  border-radius: 4pt;
+
+  padding: 20pt 40pt 20pt 40pt;
+  margin: 20pt;
+}
+
+#contact-form:hover {
+  /*box-shadow: 5px 5px #888888;*/
+  box-shadow: 5px 5px 10px 0px rgba(214,214,214,1);
+}
+
+#contact-form h2 {
+  color: var(--main-accent-color);
+}
+#contact-form h2:hover {
+  color: var(--main-accent-hover-color);
+}
+
+#contact-form button {
+  margin: 0 auto;
+  display: block;
+  border-radius: 4pt;
+}
+
+#contacts {
+  background-color: var(--main-accent-hover-color);
+  color: white;
+}
+
+#contacts .contact-link {
+  margin-bottom: 20px;
+}
+
+#intro-section {
+  padding-top: 20pt;
+}
+
+
 
 
 /* ----------------------------- EXPERIENCE PAGE CSS BELOW ----------------------------- */
