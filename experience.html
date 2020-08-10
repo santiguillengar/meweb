@@ -21,12 +21,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   <link rel="icon" href ="assets/favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
+  <script src="./color_theme.js"></script>
   </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm">
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -38,6 +38,13 @@
         </li>
       </ul>
     </div>
+    <!-- DARK THEME TOGGLE-->
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+      </label>
+    </div>
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -46,7 +53,7 @@
 
   <!-- ========== END OF COMMON ELEMENTS FOR TOP ========== -->
   <div class="main-body" id="portfolio-main">
-    <div class="text-center">
+    <div class="text-center section-header">
       <h1>Experience 🎓</h1>
       </br>
       <p>
@@ -77,7 +84,7 @@
             <td>Software Engineer Intern - JPMorgan, London</td>
             <td>2019</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details1">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details1">details</button>
             </td>
           </tr>
           <tr>
@@ -98,7 +105,7 @@
             <td>Tutor - The University of Edinburgh</td>
             <td>2018 - 2019</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details2">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details2">details</button>
             </td>
           </tr>
           <tr>
@@ -121,7 +128,7 @@
             <td>Technology Analyst - JPMorgan, Glasgow</td>
             <td>2018</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details3">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details3">details</button>
             </td>
           </tr>
           <tr>
@@ -161,7 +168,7 @@
             <td>JavaScript Algorithms and Data Structures Certification</td>
             <td>2020</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm">
+              <button type="button" class="btn btn-sm">
                 <a class="certification-link-button" target="_blank" href="https://www.freecodecamp.org/certification/santiguillen/javascript-algorithms-and-data-structures">view</a>
               </button>
             </td>
@@ -170,7 +177,7 @@
             <td>Responsive Web Design Certification</td>
             <td>2020</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm">
+              <button type="button" class="btn btn-sm">
                 <a class="certification-link-button" target="_blank" href="https://www.freecodecamp.org/certification/santiguillen/responsive-web-design">view</a>
               </button>
             </td>
@@ -188,19 +195,19 @@
         <br>
         <dl class="row">
           <dt class="col-sm-4">Python</dt>
-          <dd class="col-sm-8">Jupyter notebooks, Numpy, Pandas</dd>
+          <dd class="col-sm-8 moreinfo">Jupyter notebooks, Numpy, Pandas</dd>
           </br></br>
           <dt class="col-sm-4">JavaScript</dt>
-          <dd class="col-sm-8">ES6, NodeJS, Express, Swagger</dd>
+          <dd class="col-sm-8 moreinfo">ES6, NodeJS, Express, Swagger</dd>
           </br></br>
           <dt class="col-sm-4">Web development</dt>
-          <dd class="col-sm-8">HTML, CSS, Bootstrap, Angular</dd>
+          <dd class="col-sm-8 moreinfo">HTML, CSS, Bootstrap, Angular</dd>
           </br></br>
           <dt class="col-sm-4">Java</dt>
-          <dd class="col-sm-8">Spring, Maven, JUnit and Mockito</dd>
+          <dd class="col-sm-8 moreinfo">Spring, Maven, JUnit and Mockito</dd>
           </br></br>
           <dt class="col-sm-4">SQL</dt>
-          <dd class="col-sm-8">PostgreSQL, relational algebra</dd>
+          <dd class="col-sm-8 moreinfo">PostgreSQL, relational algebra</dd>
           </br></br>
         </dl>
 
@@ -377,7 +384,7 @@
   <div id="contacts">
     <hr>
     <div class="text-center">
-      <h3>Find me online:</h3>
+      <h4>Find me online:</h4>
     </div>
 
     <br>

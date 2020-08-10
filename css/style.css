@@ -15,11 +15,99 @@
 
 }
 
+/*-------- ADDING DARK THEME OPTION BELOW -----------*/
+
+/* LIGHT COLOR PALETTE*/
+:root {
+  --bg-color: #EFEBE7;
+  --surface-color: #F6F5F4;
+  --font-color: #070D21;
+  --primary-color: #1248A5;
+  --secondary-color: #32856C;
+  --links-color: #070D21;
+}
+
+/* DARK COLOR PALETTE*/
+[data-theme="dark"] {
+  --bg-color: #222A30;
+  --surface-color: #333F48;
+  --font-color: #DBE1E6;
+  --primary-color: #F2CC8C;
+  --secondary-color: #32856C;
+  --links-color: #DBE1E6;
+}
+
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.theme-switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 45px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 12px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 12px;
+}
+
+input:checked + .slider {
+  background-color: var(--secondary-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
 /* ----------------------------- GENERAL CSS BELOW ----------------------------- */
+
+body {
+  background-color: var(--bg-color);
+}
+
+nav {
+  background-color: var(--surface-color);
+}
 
 /* Add a white background color to the top navigation */
 .topnav {
-  background-color: var(--exp-bg-color);
+  /* background-color: var(--primary-color); */
   overflow: hidden;
 }
 
@@ -33,7 +121,7 @@
 
 /* Change the color of links on hover */
 .topnav :hover {
-  background-color: var(--nav-btn-hover-bg);
+  background-color: var(--secondary-color);
   color: var(--nav-btn-hover-color);
 }
 
@@ -42,8 +130,12 @@
   font-weight: bold;
 }
 
-h5:hover {
+/*h5:hover {
   color: var(--main-accent-hover-color);
+}*/
+
+h5 {
+  color: var(--secondary-color);
 }
 
 
@@ -69,7 +161,7 @@ body,
 
 
 a {
-  color: #212529;
+  color: var(--links-color);
   -webkit-transition: all .2s;
   transition: all .2s
 }
@@ -114,6 +206,11 @@ a {
   color: black;
 }
 
+button {
+  background-color: var(--surface-color);
+  color: var(--font-color);
+}
+
 /*Typed text css section */
 @media (min-width: 450px) { /*only type text on larger screens so it fits*/
 
@@ -154,8 +251,10 @@ a {
 /*End of typed text css section*/
 
 #contact-form {
-  border: var(--main-accent-color) solid 3px;
+  border: var(--primary-color) solid 3px;
   border-radius: 4pt;
+
+  background-color: var(--surface-color);
 
   padding: 20pt 40pt 20pt 40pt;
   margin: 20pt 0pt 20pt 0pt;
@@ -167,11 +266,12 @@ a {
 }
 
 #contact-form h2 {
-  color: var(--main-accent-color);
+  color: var(--primary-color);
 }
-#contact-form h2:hover {
+
+/*#contact-form h2:hover {
   color: var(--main-accent-hover-color);
-}
+}*/
 
 #contact-form button {
   margin: 0 auto;
@@ -180,8 +280,8 @@ a {
 }
 
 #contacts {
-  background-color: var(--main-accent-hover-color);
-  color: white;
+  background-color: var(--surface-color);
+  color: var(--font-color);
 }
 
 #contacts .contact-link {
@@ -202,6 +302,13 @@ a {
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
+
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.section-header {
+  padding-top: 20px;
 }
 
 .hr2 {
@@ -215,15 +322,15 @@ a {
 }
 
 .subheader1 {
-  color: var(--main-accent-color);
+  color: var(--primary-color);
 }
 
-.subheader1:hover {
+/*.subheader1:hover {
   color: var(--main-accent-hover-color);
-}
+}*/
 
 .subheader1-link {
-  color: var(--main-accent-color);
+  color: var(--primary-color);
 }
 
 .subheader1-link:hover {
@@ -235,9 +342,6 @@ dt {
 }
 
 dd {
-  color: var(--exp-details-color);
+  color: var(--secondary-color);
 }
 
-/* .certification-link-button {
-  color: var(--exp-details-color);
-} */
