@@ -97,6 +97,10 @@ input:checked + .slider:before {
 
 /* ----------------------------- GENERAL CSS BELOW ----------------------------- */
 
+html {
+  overflow-y: overlay;
+}
+
 body {
   background-color: var(--bg-color);
 }
@@ -302,7 +306,6 @@ button {
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
-
   background-color: var(--bg-color);
   color: var(--font-color);
 }
