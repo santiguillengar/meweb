@@ -21,12 +21,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
   <link rel="icon" href ="assets/favicon.ico" type="image/x-icon" /> <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-
+  <script src="./color_theme.js"></script>
   </head>
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <nav class="navbar navbar-expand-sm">
     <!-- Navbar links -->
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
@@ -38,6 +38,13 @@
         </li>
       </ul>
     </div>
+    <!-- DARK THEME TOGGLE-->
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+      </label>
+    </div>
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -45,8 +52,8 @@
   </nav>
 
   <!-- ========== END OF COMMON ELEMENTS FOR TOP ========== -->
-  <div class="exp-main-body" id="portfolio-main">
-    <div class="text-center">
+  <div class="main-body" id="portfolio-main">
+    <div class="text-center section-header">
       <h1>Experience 🎓</h1>
       </br>
       <p>
@@ -77,7 +84,7 @@
             <td>Software Engineer Intern - JPMorgan, London</td>
             <td>2019</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details1">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details1">details</button>
             </td>
           </tr>
           <tr>
@@ -87,7 +94,7 @@
                 As a Summer Software Engineer Intern, I worked on a NodeJS project
                 involving monitoring the power of data center servers. I developed 
                 multiple node apps and implemented and leveraged different APIs.
-                I used technologies such as Node JS, Swagger for API management, 
+                I used technologies such as NodeJS, Swagger for API management, 
                 and Angular for front-end development. 
                 </br></br>
               </div>
@@ -98,20 +105,20 @@
             <td>Tutor - The University of Edinburgh</td>
             <td>2018 - 2019</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details2">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details2">details</button>
             </td>
           </tr>
           <tr>
             <td colspan=3>
               <div id="details2" class="collapse moreinfo">
                 <br>
-                I work for the School of Informatics as a tutor for:
+                I worked for the University of Edinburgh's School of Informatics as a tutor for:
                 <ul>
                   <li>Data and Analysis</li>
                   <li>Introduction to Computation.</li>
                 </ul>
-                I run tutorials every week, going through problems with fellow students
-                and making sure that everyone is confident tackling similar tasks.
+                I ran tutorials every week, going through problems with fellow students
+                and making sure that everyone was confident tackling similar tasks.
                 </br></br>
               </div>
             </td>
@@ -121,7 +128,7 @@
             <td>Technology Analyst - JPMorgan, Glasgow</td>
             <td>2018</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm" data-toggle="collapse" data-target="#details3">details</button>
+              <button type="button" class="btn btn-sm" data-toggle="collapse" data-target="#details3">details</button>
             </td>
           </tr>
           <tr>
@@ -158,10 +165,19 @@
           <col width="10%">
 
           <tr>
-            <td>Responsive Web Design Certification - FreeCodeCamp</td>
+            <td>JavaScript Algorithms and Data Structures Certification</td>
             <td>2020</td>
             <td>
-              <button type="button" class="btn btn-light btn-sm">
+              <button type="button" class="btn btn-sm">
+                <a class="certification-link-button" target="_blank" href="https://www.freecodecamp.org/certification/santiguillen/javascript-algorithms-and-data-structures">view</a>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Responsive Web Design Certification</td>
+            <td>2020</td>
+            <td>
+              <button type="button" class="btn btn-sm">
                 <a class="certification-link-button" target="_blank" href="https://www.freecodecamp.org/certification/santiguillen/responsive-web-design">view</a>
               </button>
             </td>
@@ -179,26 +195,20 @@
         <br>
         <dl class="row">
           <dt class="col-sm-4">Python</dt>
-          <dd class="col-sm-8">Jupyter notebooks, Numpy, Pandas</dd>
+          <dd class="col-sm-8 moreinfo">Jupyter notebooks, Numpy, Pandas</dd>
           </br></br>
-          <dt class="col-sm-4">Java</dt>
-          <dd class="col-sm-8">Spring, Maven, JUnit and Mockito</dd>
+          <dt class="col-sm-4">JavaScript</dt>
+          <dd class="col-sm-8 moreinfo">ES6, NodeJS, Express, Swagger</dd>
           </br></br>
           <dt class="col-sm-4">Web development</dt>
-          <dd class="col-sm-8">HTML, CSS, Bootstrap, Angular</dd>
+          <dd class="col-sm-8 moreinfo">HTML, CSS, Bootstrap, Angular</dd>
           </br></br>
-          <dt class="col-sm-4">Android</dt>
-          <dd class="col-sm-8">Java, Android Studio</dd>
+          <dt class="col-sm-4">Java</dt>
+          <dd class="col-sm-8 moreinfo">Spring, Maven, JUnit and Mockito</dd>
           </br></br>
           <dt class="col-sm-4">SQL</dt>
-          <dd class="col-sm-8">PostgreSQL, relational algebra</dd>
+          <dd class="col-sm-8 moreinfo">PostgreSQL, relational algebra</dd>
           </br></br>
-
-          <dt class="col-sm-4">Matlab</dt>
-          <dd class="col-sm-8">Applied in ML courses</dd>
-          </br></br>
-          <dt class="col-sm-4">Haskell</dt>
-          <dd class="col-sm-8">Used in Functional Programming</dd>
         </dl>
 
         <br>
@@ -369,140 +379,55 @@
     </br>
     </br>
     <!-- ================================================================ -->
-    <section id="highschool">
-      <h2>
-        <a class="subheader1-link" href="http://www.canterburyschool.com/en" target="_blank" id="school-section">High School</a>
-      </h2>
-      <hr class="hr2">
-      <p class="moreinfo">
-        I went to a British school in the Canary Islands, Spain, where I focused on technology, science and languages.
-      </p>
-      <br>
-      <div class="row">
-        <div class="col-sm-6">
-          <h5>A levels</h5>
-          <table border="0" width="90%">
-            <col width="60%">
-            <col width="40%">
-            <tr>
-              <td>Computing</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>Spanish</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>Maths</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>Physics</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>English</td>
-              <td>A</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="col-sm-3">
-          <h5>GCSEs</h5>
-          <table border="0" width="90%">
-            <col width="60%">
-            <col width="40%">
-            <tr>
-              <td>Physics</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>Chemistry</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>Spanish</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>French</td>
-              <td>A*</td>
-            </tr>
-            <tr>
-              <td>ICT</td>
-              <td>A</td>
-            </tr>
-          </table>
-        </div>
-        <div class="col-sm-3">
-          <h5></h5>
-          <br>
-          <table border="0" width="90%">
-            <col width="60%">
-            <col width="40%">
-            <tr>
-              <td>Spanish Literature</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>First Lang. English</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>Second Lang. English</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>Maths</td>
-              <td>A</td>
-            </tr>
-            <tr>
-              <td>Further Pure Maths</td>
-              <td>B</td>
-            </tr>
-          </table>
-        </div>
-
-      </div>
-
-    </section>
   </div>
   <!-- ========== START OF COMMON ELEMENTS FOR BOTTOM ========== -->
-  <div class="container">
+  <div id="contacts">
     <hr>
     <div class="text-center">
-      <h3>Find me online:</h3>
+      <h4>Find me online:</h4>
     </div>
 
     <br>
     <div class="row">
-      <div class="col-0 col-xs-2 col-sm-2 col-md-2"></div>
-      <div class="col-3 col-xs-2 col-sm-2 col-md-2 text-center">
+      <div class="col-md-3"></div>
+      <div class="col-4 col-md-1 text-center contact-link">
+        <a href="https://github.com/santiguillengar" target="_blank">
+          <img src="assets/GitHub_Logo.png" alt="GitHub" class="img-fluid"
+            style="max-height:40px; max-width:100%;" />
+        </a>
+      </div>
+      <div class="col-4 col-md-1 text-center contact-link">
+        <a href="https://www.freecodecamp.org/santiguillen" target="_blank">
+          <img src="assets/fcc_logo.png" alt="FreeCodeCamp" class="img-fluid"
+            style="max-height:40px; max-width:100%;" />
+        </a>
+      </div>
+      <div class="col-4 col-md-1 text-center contact-link">
         <a href="mailto:santiguillen97@gmail.com?Subject=Hello" target="_blank" target="_top">
           <img src="assets/Gmail_Logo.png" alt="email" class="img-fluid" style="max-height:35px; max-width:100%;" />
         </a>
       </div>
-      <div class="col-3 col-xs-2 col-sm-2 col-md-2 text-center">
+      <div class="col-4 col-md-1 text-center contact-link">
         <a href="https://www.linkedin.com/in/santiago-guillen-garcia/" target="_blank">
-          <img src="assets/Linkedin_Logo.png" alt="Linkedin" class="img-fluid" style="max-height:40px; max-width:100%;" />
+          <img src="assets/Linkedin_Logo.png" alt="Linkedin" class="img-fluid"
+            style="max-height:40px; max-width:100%;" />
         </a>
       </div>
-      <div class="col-3 col-xs-2 col-sm-2 col-md-2 text-center">
+      <div class="col-4 col-md-1 text-center contact-link">
         <a href="https://www.instagram.com/santiguillengar/" target="_blank">
-          <img src="assets/Instagram_Logo.png" alt="Instagram" class="img-fluid" style="max-height:40px; max-width:100%;" />
+          <img src="assets/Instagram_Logo.png" alt="Instagram" class="img-fluid"
+            style="max-height:40px; max-width:100%;" />
         </a>
       </div>
-      <div class="col-3 col-xs-2 col-sm-2 col-md-2 text-center">
+      <div class="col-4 col-md-1 text-center contact-link">
         <a href="https://twitter.com/notnotsanti" target="_blank">
-          <img src="assets/Twitter_Logo.png" alt="Twitter" class="img-fluid" style="max-height:40px; max-width:100%;" />
+          <img src="assets/Twitter_Logo.png" alt="Twitter" class="img-fluid"
+            style="max-height:40px; max-width:100%;" />
         </a>
       </div>
-      <div class="col-0 col-xs-2 col-sm-2 col-md-2"></div>
+      <div class="col-md-3"></div>
+      </div>
     </div>
-
-    <br>
-    <br>
-  </div>
 
 </body>
 
