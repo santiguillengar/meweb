@@ -214,6 +214,17 @@ button {
   color: var(--font-color);
 }
 
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: var(--surface-color) solid 3px;
+  border-radius: 4pt;
+}
+button[type="submit"]:hover {
+  background-color: var(--secondary-color);
+  border: var(--surface-color) solid 3px;
+}
+
 /*Typed text css section */
 @media (min-width: 450px) { /*only type text on larger screens so it fits*/
 
@@ -263,10 +274,6 @@ button {
   margin: 20pt 0pt 20pt 0pt;
 }
 
-#contact-form:hover {
-  /*box-shadow: 5px 5px #888888;*/
-  box-shadow: 5px 5px 10px 0px rgba(214,214,214,1);
-}
 
 #contact-form h2 {
   color: var(--primary-color);
