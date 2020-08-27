@@ -1,7 +1,7 @@
 // use this script to change between dark and light theme
 document.addEventListener("DOMContentLoaded", function() { 
   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark';
 
   if (currentTheme) {
       document.documentElement.setAttribute('data-theme', currentTheme);
